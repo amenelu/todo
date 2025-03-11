@@ -11,7 +11,7 @@
       {% for todo in todos %}
       <li>
         <input type="checkbox" name="done" {% if todo['done'] %} checked {%
-        endif %} disabled onchange="this.form.submit()"/>
+        endif %} disabled />
         <span {% if todo['done'] %} style="text-decoration:line-through" {% endif %} >
             {{todo['task']}}
         </span>
